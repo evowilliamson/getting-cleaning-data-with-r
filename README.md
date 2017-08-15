@@ -27,9 +27,9 @@ The assignment encompassed the processing of the original datasets that are cont
 The result of this assignments are the following artifacts:
 
 1. README.md file (this file)
-2. Codebook.md file that contains that describes the requested datasets
+2. Codebook.md file that describes the requested datasets
 3. The script run_analysis.R that takes as input the datasets described in the **Experiment** and generates two extra datasets, being the **getting_cleaning_data_datasets.csv** and **getting_cleaning_data_averages.csv**. These datasets are described in the next bullet
-4. Dataset getting_cleaning_data_dataset.csv: mean and std variables of original X_train.txt and X_test.txt. Newly introduced variables are the type (train or test), the activity label and the subject
+4. Dataset getting_cleaning_data_dataset.csv: Contains the mean and std variables of original X_train.txt and X_test.txt. Newly introduced variables are the type (train or test), the activity label and the subject
 5. Dataset getting_cleaning_data_averages.csv. Contains the mean and std variables of the original X_train.txt and X_test.txt and these variables are grouped by the subject and the activity and averages are calculated for these variables
 
 ## Script
