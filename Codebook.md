@@ -8,7 +8,7 @@ version: 1.0
 
 ## getting_cleaning_data_dataset.csv
 
-This dataset is the main dataset and it lists observations on the level of type, activity and subject. These are the variables in the dataset:
+This dataset is the main dataset on which the averages dataset is based (described later in this document) and it lists observations on the level of type, activity and subject. These are the variables in the dataset:
 
 |variable                       | unit     | description                                         |      
 |-------------------------------|----------| ----------------------------------------------------|  
@@ -188,6 +188,3 @@ These are the variables in the dataset:
 |fBodyBodyGyroJerkMag-meanFreq | num    | average value from dataset getting_cleaning_data_datasenumsv |
 
 **NOTE: The first row in the dataset contains the header names of the columns**
-
-
-
