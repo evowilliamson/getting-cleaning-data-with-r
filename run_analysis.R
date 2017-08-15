@@ -51,11 +51,11 @@ test_dataframe<-read_dataset("test", headers, activities)
 ## Vertically merge the two datasets into a new dataset, requirement bullet no. 1
 raw_dataframe<-rbind(train_dataframe, test_dataframe)
 ## Write dataset to file
-write.csv(raw_dataframe, "./getting_cleaning_data_dataset.csv", quote=FALSE, row.names=FALSE)
+write.table(raw_dataframe, "./getting_cleaning_data_dataset.csv", quote=FALSE, row.names=FALSE, col.names=FALSE)
 
 ## Do group-by activity and subject
 averages<-subset(raw_dataframe, select=-type) %>%
     group_by(activity, subject) %>%
     summarise_all(funs(mean))
 ## Write dataset to file
-write.csv(averages, "./getting_cleaning_data_averages.csv", quote=FALSE, row.names=FALSE)
+write.table(averages, "./getting_cleaning_data_averages.csv", quote=FALSE, row.names=FALSE, col.names=FALSE)
