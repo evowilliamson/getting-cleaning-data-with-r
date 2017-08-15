@@ -26,23 +26,23 @@ The assignment encompassed the processing of the original datasets that are cont
 
 The result of this assignments are the following artifacts:
 
-1. The getting_cleaning_data_README.md file (this file)
-2. The getting_cleaning_data_codebook.md file that contains that describes the requested datasets
-3. The script getting_cleaning_data.R that takes as input the datasets described in the **Experiment** and generates two extra datasets, being the **getting_cleaning_data_datasets.csv** and **getting_cleaning_data_averages.csv**. These datasets are described in the next bullet
+1. README.md file (this file)
+2. Codebook.md file that contains that describes the requested datasets
+3. The script run_analysis.R that takes as input the datasets described in the **Experiment** and generates two extra datasets, being the **getting_cleaning_data_datasets.csv** and **getting_cleaning_data_averages.csv**. These datasets are described in the next bullet
 4. Dataset getting_cleaning_data_dataset.csv: mean and std variables of original X_train.txt and X_test.txt. Newly introduced variables are the type (train or test), the activity label and the subject
 5. Dataset getting_cleaning_data_averages.csv. Contains the mean and std variables of the original X_train.txt and X_test.txt and these variables are grouped by the subject and the activity and averages are calculated for these variables
 
 ## Script
 
-The script getting_cleaning_data.R contains the code that reads the original datasets and generates the required enriched datasets, being **getting_cleaning_data_dataset.csv** and **getting_cleaning_data_averages.csv**.
+The script run_analysis.R contains the code that reads the original datasets and generates the required enriched datasets, being **getting_cleaning_data_dataset.csv** and **getting_cleaning_data_averages.csv**.
 
 ### Dependent libraries
 
-The script **getting_cleaning_data.R** uses the libraries dplyr and gsubfn. These libraries can be installed the following way:
+The script **run_analysis.R** uses the libraries dplyr and gsubfn. These libraries can be installed the following way:
 * install.packages('dplyr')
 * install.packages('gsubfn')
 
-These packages must be installed before the script getting_cleaning_data.R can be run successfully
+These packages must be installed before the script run_analysis.R can be run successfully
 
 ### Design of the script
 
@@ -85,7 +85,7 @@ In order to run the script, the following steps have to be performed:
 3. Extract the files that are contained in this zip file into the directory **local_directory**. Make sure that the files are not contained in the subdirectory "UCI HAR Dataset"
 4. Start RStudio or an R-console session
 5. Set the working directory to the directory that was used in step 3: setwd(**local_directory**)
-6. Source the script getting_cleaning_data.R: source('getting_cleaning_data.R')
+6. Source the script run_analysis.R: source('run_analysis.R')
 7. The script will perform the operations that are described in **Design of the script** above
 8. Two datasets will have been generated: **getting_cleaning_data_dataset.csv** and **getting_cleaning_data_averages.csv** in the working directory **local_directory**
 

@@ -6,11 +6,7 @@ output: html_document
 ---
 version: 1.0
 
-## Datasets
-
-This paragraph lists the structure of the generated datasets getting_cleaning_data_dataset.csv and getting_cleaning_data_averages.csv.
-
-### getting_cleaning_data_dataset.csv
+## getting_cleaning_data_dataset.csv
 
 This dataset is the main dataset and it lists observations on the level of type, activity and subject. These are the variables in the dataset:
 
@@ -101,7 +97,7 @@ This dataset is the main dataset and it lists observations on the level of type,
 
 **NOTE: The first row in the dataset contains the header names of the columns**
 
-### getting_cleaning_data_averages.csv
+## getting_cleaning_data_averages.csv
 
 This dataset contains the averages for all the mean and std values from the previous dataset, **grouped by activity and subject**.
 
